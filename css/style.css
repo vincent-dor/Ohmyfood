@@ -1,0 +1,40 @@
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1em;
+  background-color: #1f2039;
+}
+
+header {
+  background-color: white;
+  padding: 20px 50px;
+}
+
+/* Section introduction */
+.intro {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  align-items: flex-start;
+  margin: auto;
+  padding: 80px;
+}
+.intro .intro__title {
+  margin-bottom: 15px;
+  font-size: 3.5em;
+  color: #a5b4fc;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 0.5rem 0.5rem #534979;
+}
+.intro .intro__content {
+  font-size: 1.1em;
+  color: #f9f8ff;
+}
+.intro .intro__content--color {
+  color: #a5b4fc;
+  font-style: normal;
+}
+.intro .intro__image {
+  margin-left: 80px;
+}
+
+/*# sourceMappingURL=style.css.map */
