@@ -1,0 +1,14 @@
+.location {
+  display: flex;
+  justify-content: center;
+  background: #eaeaea;
+  &__content {
+    margin: 20px 0px 20px 0px;
+    a {
+      color: black;
+    }
+    &--description {
+      padding-left: 20px;
+    }
+  }
+}
