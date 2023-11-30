@@ -3,9 +3,12 @@
 @import "../sass/base/base";
 @import "../sass/base/fonts";
 
+@import "../sass/components/button";
+@import "../sass/components/step";
+
 @import "../sass/layout/header";
 @import "../sass/layout/location";
 @import "../sass/layout/explore";
+@import "../sass/layout/function";
 @import "../sass/layout/footer";
 
-@import "../sass/components/button"
