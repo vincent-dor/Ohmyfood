@@ -1,0 +1,17 @@
+.explore {
+  background: #f6f6f6;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__content {
+    color: black;
+    font-family: "Roboto";
+    text-align: center;
+    padding: 2.7rem 2.9rem 0 2.9rem;
+  }
+  &__title {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}

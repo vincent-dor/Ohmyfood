@@ -1,0 +1,16 @@
+.button {
+  background-image: linear-gradient($secondaire, $primaire);
+  font-size: 1rem;
+  font-weight: 550;
+  border-radius: 50px;
+  height: 3rem;
+  border: none;
+  width: 215px;
+  box-shadow: 5px 6px 7px #0000002e;
+  text-align: center;
+  margin-top: 0.7rem;
+  &__text {
+    color: white;
+ 
+  }
+}
