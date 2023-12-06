@@ -1,5 +1,8 @@
 .button {
   background-image: linear-gradient($secondaire, $primaire);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1rem;
   font-weight: 550;
   border-radius: 50px;
@@ -9,8 +12,5 @@
   box-shadow: 5px 6px 7px #0000002e;
   text-align: center;
   margin-top: 0.7rem;
-  &__text {
-    color: white;
- 
-  }
+  color: white;
 }
