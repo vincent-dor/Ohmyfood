@@ -1,9 +1,19 @@
 .header {
-    padding: 22px 0 8px 0px;
-    text-align: center;
-    &__image {
-      justify-content: center;
-      width: 10rem;
-    }
+  padding: 22px 0 8px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  &__image {
+    justify-content: center;
+    width: 10rem;
   }
-  
+  &__back {
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  a {
+    color: black;
+  }
+}

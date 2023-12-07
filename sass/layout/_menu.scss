@@ -1,0 +1,49 @@
+.menu {
+  padding-bottom: 2.5rem;
+  &__title {
+    margin: 24px 0px 8px 18px;
+    border-bottom: 3px solid $tertiaire;
+    padding-bottom: 6px;
+    width: 15%;
+    font-weight: 100;
+  }
+
+  .contents {
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    box-shadow: 0 5px 16px #0000002e;
+    &__title {
+      font-weight: 600;
+      margin: 0;
+    }
+    &__box {
+      width: 100%;
+      padding: 0.8em;
+      position: relative;
+      box-sizing: border-box;
+    }
+    &__description {
+      display: flex;
+      padding-top: 5px;
+    }
+    &__subtitle {
+      width: 90%;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+    &__price {
+      margin: 0;
+    }
+  }
+
+  .command {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
