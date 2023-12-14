@@ -1,5 +1,5 @@
 .button {
-  background-image: linear-gradient($secondaire, $primaire);
+  background-image: linear-gradient($secondaire, 20px, $primaire);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,4 +13,9 @@
   text-align: center;
   margin-top: 0.7rem;
   color: white;
+  transition: 1s;
+  &:hover {
+    filter: brightness(140%);
+    box-shadow: 10px 11px 12px #0000002e;
+  }
 }

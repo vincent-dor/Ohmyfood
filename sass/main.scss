@@ -1,10 +1,13 @@
 @import "../sass/abstracts/variables";
+@import "../sass/abstracts/animation";
 
 @import "../sass/base/base";
 @import "../sass/base/fonts";
 
 @import "../sass/components/button";
 @import "../sass/components/step";
+@import "../sass/components/loading";
+@import "../sass/components/heart";
 
 @import "../sass/layout/header";
 @import "../sass/layout/location";

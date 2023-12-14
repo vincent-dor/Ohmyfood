@@ -1,0 +1,17 @@
+.fa-heart-animated {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-4px);
+  color: #9356dc;
+  font-size: 0px;
+  bottom: 0;
+  transition-duration: 0.3s;
+}
+
+.fa-heart-animated1 {
+  position: absolute;
+  transform: translateX(-100%) translateY(-3px);
+  color: #9356dc;
+  font-size: 0px;
+  bottom: 94.75%;
+}

@@ -1,7 +1,7 @@
 .restaurants {
   background-color: $light-grey;
   margin-top: 50px;
-  padding-bottom: 45px;
+  padding-bottom: 5rem;
   &__title {
     padding: 28px 0px 8px 26px;
     font-weight: 800;
@@ -51,6 +51,9 @@
       right: 30px;
       bottom: 20px;
       font-size: 25px;
+      &:hover .fa-heart-animated {
+        font-size: 25px;
+      }
     }
   }
 }

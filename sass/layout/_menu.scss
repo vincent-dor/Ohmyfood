@@ -1,5 +1,9 @@
 .menu {
   padding-bottom: 2.5rem;
+  animation-duration: 2s;
+  animation-name: slide-in-bottom;
+  transform: scale(0);
+  animation-fill-mode: forwards;
   &__title {
     margin: 24px 0px 8px 18px;
     border-bottom: 3px solid $tertiaire;
@@ -17,9 +21,19 @@
     margin-right: auto;
     margin-top: 12px;
     box-shadow: 0 5px 16px #0000002e;
+    position: relative;
+
+    &:hover .contents__check {
+      width: 60px;
+      border-radius: 0px 10px 10px 0px;
+    }
+
     &__title {
       font-weight: 600;
       margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     &__box {
       width: 100%;
@@ -29,16 +43,36 @@
     }
     &__description {
       display: flex;
+      flex-wrap: wrap;
       padding-top: 5px;
     }
     &__subtitle {
-      width: 90%;
       font-size: 0.9rem;
       margin: 0;
+      white-space: nowrap;
+      width: 90%;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     &__price {
       margin: 0;
     }
+    &__check {
+      height: 100%;
+      width: 0;
+      background: $tertiaire;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: all 0.5s ease;
+    }
+  }
+
+  .circle {
+    background-color: white;
+    color: $tertiaire;
+    background: radial-gradient(white 50%, transparent 70%);
   }
 
   .command {
