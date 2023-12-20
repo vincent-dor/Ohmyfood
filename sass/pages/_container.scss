@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 2rem;
   }
   &__title {
     font-family: "shrikhand";
@@ -15,13 +16,40 @@
     font-weight: initial;
     font-size: 1.7rem;
     padding-top: 1rem;
+    margin-bottom: 0;
   }
   &__heart {
-    padding-left: 30px;
-    padding-top: 15px;
+    position: absolute;
+    right: 40px;
+    top: 37px;
     font-size: 25px;
     &:hover .fa-heart-animated1 {
       font-size: 25px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    top: -35px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-right: 12rem;
+    margin-left: 12rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    &__title {
+      padding-top: 2rem;
+    }
+    &__heart {
+      position: relative;
+      left: 35px;
+      top: 25px;
+      font-size: 25px;
+    }
+    &__box {
+      margin-bottom: 1.2rem;
     }
   }
 }

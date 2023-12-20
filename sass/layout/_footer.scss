@@ -29,3 +29,28 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 3rem 4rem 2rem 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    &__title {
+      font-size: 1.1rem;
+    }
+    .content {
+      &__subtitle {
+        display: flex;
+      }
+      &__list {
+        display: flex;
+        padding-right: 5rem;
+      }
+      &__listdetail {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  }
+}

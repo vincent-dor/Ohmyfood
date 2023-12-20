@@ -1,17 +1,17 @@
 .restaurants {
   background-color: $light-grey;
-  margin-top: 50px;
+  margin-top: 70px;
+  padding-top: 0.8rem;
   padding-bottom: 5rem;
   &__title {
     padding: 28px 0px 8px 26px;
     font-weight: 800;
     font-size: 22px;
   }
-
   .restaurant {
     border-radius: 15px;
     width: 88%;
-    height: 200px;
+    height: 240px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -20,7 +20,7 @@
 
     &__image img {
       width: 100%;
-      height: 135px;
+      height: 170px;
       border-radius: 14px 14px 0px 0px;
       object-fit: cover;
     }
@@ -49,10 +49,62 @@
     &__heart {
       position: absolute;
       right: 30px;
-      bottom: 20px;
+      bottom: 19px;
       font-size: 25px;
       &:hover .fa-heart-animated {
         font-size: 25px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .restaurants {
+    padding-top: 0;
+    padding-bottom: 1rem;
+    margin-top: 30px;
+    &__title {
+      padding-bottom: 0px;
+      padding-left: 180px;
+      margin-bottom: 0px;
+      font-size: 25px;
+    }
+    .test {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+    .restaurant {
+      width: 37%;
+      margin: 2rem 3rem 1rem 3rem;
+      height: 250px;
+      &__image img {
+        height: 175px;
+      }
+      &__content {
+        padding-top: 10px;
+        &--new {
+          position: absolute;
+          top: 0;
+          right: 15px;
+          background: $tertiaire;
+          padding: 4px 10px;
+          color: #369658;
+        }
+      }
+      &__title {
+        padding-left: 14px;
+        font-size: 1.1rem;
+      }
+      &__subtitle {
+        padding-left: 14px;
+      }
+      &__heart {
+        right: 27px;
+        bottom: 26px;
       }
     }
   }

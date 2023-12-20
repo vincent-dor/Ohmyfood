@@ -14,3 +14,19 @@
     margin: 0;
   }
 }
+
+@media (min-width: 1024px) {
+  .explore {
+    padding-bottom: 35px;
+    &__content {
+      padding: 2rem 2.9rem 0 3.2rem;
+    }
+    &__title {
+      font-size: 2.55rem;
+    }
+    &__subtitle {
+      margin-top: 2rem;
+      font-size: 1.1rem;
+    }
+  }
+}

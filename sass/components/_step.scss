@@ -3,8 +3,8 @@
   justify-content: flex-start;
   box-shadow: 0 5px 10px #0000002e;
   background-color: $light-grey;
-  width: 85%;
-  margin: 1rem 2rem 1.5rem 2rem;
+  width: 87%;
+  margin: 2rem 2.5rem 1.5rem 2rem;
   border-radius: 18px;
   height: 4rem;
   &__content {
@@ -18,7 +18,7 @@
   }
   &__icon {
     color: GREY;
-    font-size: 16px;
+    font-size: 20px;
     width: 50px;
     margin-left: 2rem;
     &--1 {
@@ -37,5 +37,30 @@
   }
   &__number {
     margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .step {
+    margin: 1rem;
+    &__circle {
+      position: relative;
+      left: -10px;
+    }
+    &__text {
+      padding-right: 3rem;
+      font-size: 15px;
+    }
+    &__icon {
+      margin-left: 0.9rem;
+      width: 33px;
+    }
+  }
+  .test2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 }

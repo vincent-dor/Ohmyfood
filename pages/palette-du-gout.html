@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,20 +14,25 @@
     <div id="#">
       <header class="header">
         <div class="header__back">
-          <a href="index.html"> <i class="fas fa-arrow-left"></i></a>
+          <a href="/index.html">
+            <i class="fas fa-arrow-left"></i>
+          </a>
         </div>
         <a href="#">
-          <img class="header__image" src="images/logo/ohmyfood@2x.svg" alt="ohmyfood" />
+          <img class="header__image" src="../images/logo/ohmyfood@2x.svg" alt="ohmyfood" />
         </a>
       </header>
       <main class="mainpage">
         <div class="image">
-          <img class="image__page" src="images/restaurants/jay-wennington.jpg" alt="photo de la palette" />
+          <img class="image__page" src="../images/restaurants/jay-wennington.jpg" alt="photo de la palette" />
         </div>
         <div class="container">
           <div class="container__box">
             <h1 class="container__title">La palette du goût</h1>
-            <div class="container__heart"><i class="far fa-heart"></i> <i class="fas fa-heart fa-heart-animated1"></i></div>
+            <div class="container__heart">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-heart fa-heart-animated1"></i>
+            </div>
           </div>
           <section class="menu menu--1">
             <h2 class="menu__title">ENTRÉES</h2>
@@ -142,7 +148,7 @@
                   <p class="contents__price"><strong>22€</strong></p>
                 </div>
               </div>
-              <div>
+              <div class="test">
                 <div class="contents__check">
                   <i class="far fa-check-circle circle"></i>
                 </div>
@@ -163,11 +169,11 @@
               </div>
             </div>
           </section>
-          <section class="menu menu--4">
+          <div class="menu menu--4">
             <div class="command">
               <button class="button">Commander</button>
             </div>
-          </section>
+          </div>
         </div>
       </main>
       <footer class="footer">
@@ -175,10 +181,20 @@
         <div class="content">
           <div class="content__subtitle">
             <ul class="content__list">
-              <li class="content__listdetail"><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
-              <li class="content__listdetail"><i class="fas fa-hands-helping icon"></i><a href="#">Devenir Partenaire</a></li>
-              <li class="content__listdetail"><a href="#">Mentions légales</a></li>
-              <li class="content__listdetail"><a href="mailto:email@example.com">Contact</a></li>
+              <li class="content__listdetail">
+                <i class="fas fa-utensils"></i>
+                <a href="#">Proposer un restaurant</a>
+              </li>
+              <li class="content__listdetail">
+                <i class="fas fa-hands-helping icon"></i>
+                <a href="#">Devenir Partenaire</a>
+              </li>
+              <li class="content__listdetail">
+                <a href="#">Mentions légales</a>
+              </li>
+              <li class="content__listdetail">
+                <a href="mailto:email@example.com">Contact</a>
+              </li>
             </ul>
           </div>
         </div>

@@ -1,3 +1,9 @@
 .mainpage {
   background-color: $light-grey;
 }
+
+@media (min-width: 1024px) {
+  .mainpage {
+    background-color: white;
+  }
+}

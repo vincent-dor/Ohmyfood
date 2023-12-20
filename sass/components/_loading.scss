@@ -9,7 +9,7 @@
   z-index: 1;
   animation: load;
   animation-duration: 3s;
-  transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in;
   animation-delay: 1s;
   animation-fill-mode: both;
   &__icon {
@@ -25,13 +25,16 @@
 
 @keyframes load {
   from {
-    opacity: 95%;
+    opacity: 100%;
   }
   to {
     display: none;
-    opacity: 0%;
+    opacity: 0;
+    width: 1;
+    height: 0;
   }
 }
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);
