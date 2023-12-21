@@ -139,13 +139,6 @@ a {
     margin-left: 0.9rem;
     width: 33px;
   }
-  .test2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
 }
 .loading {
   display: flex;
@@ -201,17 +194,20 @@ a {
   -webkit-text-fill-color: transparent;
   font-size: 0px;
   bottom: 0;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
 }
 
 .fa-heart-animated1 {
   position: absolute;
-  transform: translateX(-100%);
+  left: 50%;
+  transform: translateX(-50%) translateY(-3px);
+  color: #9356dc;
   background: -webkit-linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #9356dc;
   font-size: 0px;
+  bottom: 0;
+  transition-duration: 0.3s;
 }
 
 .header {
@@ -314,7 +310,14 @@ a {
     padding-top: 25px;
     padding-bottom: 0px;
   }
-  .function .test1 {
+  .function__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .function__content {
     display: flex;
     width: 80%;
   }
@@ -375,7 +378,7 @@ a {
   font-size: 25px;
 }
 .restaurants .restaurant__heart:hover .fa-heart-animated {
-  font-size: 25px;
+  font-size: 26px;
 }
 
 @media (min-width: 1024px) {
@@ -389,14 +392,6 @@ a {
     padding-left: 180px;
     margin-bottom: 0px;
     font-size: 25px;
-  }
-  .restaurants .test {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 3rem;
-    margin-right: 3rem;
   }
   .restaurants .restaurant {
     width: 37%;
@@ -427,6 +422,14 @@ a {
   .restaurants .restaurant__heart {
     right: 27px;
     bottom: 26px;
+  }
+  .restaurants .restaurant__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 }
 .menu {
@@ -513,6 +516,11 @@ a {
   justify-content: center;
 }
 
+@media (min-width: 1024px) {
+  .menu__title {
+    width: 5%;
+  }
+}
 .image {
   display: flex;
   justify-content: center;
@@ -620,7 +628,7 @@ a {
   font-size: 25px;
 }
 .container__heart:hover .fa-heart-animated1 {
-  font-size: 25px;
+  font-size: 26px;
 }
 
 @media (min-width: 1024px) {

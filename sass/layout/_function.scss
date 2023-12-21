@@ -5,6 +5,7 @@
     font-size: 22px;
   }
 }
+
 @media (min-width: 1024px) {
   .function {
     display: flex;
@@ -15,7 +16,14 @@
       padding-top: 25px;
       padding-bottom: 0px;
     }
-    .test1 {
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+    &__content {
       display: flex;
       width: 80%;
     }

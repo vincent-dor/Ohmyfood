@@ -8,14 +8,17 @@
   -webkit-text-fill-color: transparent;
   font-size: 0px;
   bottom: 0;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
 }
 .fa-heart-animated1 {
   position: absolute;
-  transform: translateX(-100%);
+  left: 50%;
+  transform: translateX(-50%) translateY(-3px);
+  color: $primaire;
   background: -webkit-linear-gradient($secondaire, $primaire);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: $primaire;
   font-size: 0px;
+  bottom: 0;
+  transition-duration: 0.3s;
 }
