@@ -73,7 +73,7 @@
   }
   .circle {
     background-color: white;
-    font-size: 20px;
+    font-size: 25px;
     color: $tertiaire;
     background: radial-gradient(white 50%, transparent 70%);
   }
@@ -85,12 +85,23 @@
 
 @media (min-width: 1024px) {
   .menu {
-
-  &__title {
- 
-    width: 5%;
-  
+    width: 70%;
+    &__title {
+      width: 5%;
+    }
   }
-
 }
+
+@media (max-width: 360px) {
+  .menu {
+    .contents {
+      &__subtitle {
+        width: 21vh;
+      }
+      &__box {
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+    }
+  }
 }

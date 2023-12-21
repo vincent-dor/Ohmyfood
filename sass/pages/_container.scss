@@ -1,9 +1,7 @@
 .container {
   position: relative;
   width: 100%;
-  top: -50px;
   background-color: $light-grey;
-  border-radius: 30px 30px 0px 0px;
   &__box {
     display: flex;
     justify-content: center;
@@ -15,41 +13,59 @@
     display: flex;
     font-weight: initial;
     font-size: 1.7rem;
-    padding-top: 1rem;
-    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
   }
   &__heart {
     position: absolute;
     right: 40px;
-    top: 37px;
+    top: 5px;
     font-size: 25px;
-    &:hover .fa-heart-animated1 {
+    &:hover .fa-heart-animated {
       font-size: 26px;
     }
   }
 }
 
+.border {
+  position: relative;
+  background-color: $light-grey;
+  top: -20px;
+  width: 100%;
+  border-radius: 30px 30px 0px 0px;
+  height: 21px;
+}
+
 @media (min-width: 1024px) {
   .container {
-    top: -35px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     width: auto;
     margin-right: 12rem;
     margin-left: 12rem;
-    padding-left: 12rem;
-    padding-right: 12rem;
+
     &__title {
       padding-top: 2rem;
     }
     &__heart {
       position: relative;
       left: 35px;
-      top: 25px;
+      top: 15px;
       font-size: 25px;
     }
     &__box {
       margin-bottom: 1.2rem;
     }
   }
+  .border {
+    top: -40px;
+    width: auto;
+    margin-bottom: -41px;
+    margin-right: 12rem;
+    margin-left: 12rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
 }
+

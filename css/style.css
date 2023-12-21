@@ -11,7 +11,7 @@
  */
 @keyframes slide-in-bottom {
   0% {
-    transform: translateY(1000px);
+    transform: translateY(50px);
     opacity: 0;
   }
   100% {
@@ -185,19 +185,6 @@ a {
   }
 }
 .fa-heart-animated {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%) translateY(-3px);
-  color: #9356dc;
-  background: -webkit-linear-gradient(#ff79da, #9356dc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 0px;
-  bottom: 0;
-  transition-duration: 0.3s;
-}
-
-.fa-heart-animated1 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%) translateY(-3px);
@@ -507,7 +494,7 @@ a {
 }
 .menu .circle {
   background-color: white;
-  font-size: 20px;
+  font-size: 25px;
   color: #99e2d0;
   background: radial-gradient(white 50%, transparent 70%);
 }
@@ -517,8 +504,20 @@ a {
 }
 
 @media (min-width: 1024px) {
+  .menu {
+    width: 70%;
+  }
   .menu__title {
     width: 5%;
+  }
+}
+@media (max-width: 360px) {
+  .menu .contents__subtitle {
+    width: 21vh;
+  }
+  .menu .contents__box {
+    padding-right: 5px;
+    padding-left: 5px;
   }
 }
 .image {
@@ -529,12 +528,12 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  height: 41vh;
+  height: 36vh;
 }
 
 @media (min-width: 1024px) {
   .image__page {
-    height: 42vh;
+    height: 45vh;
   }
 }
 .footer {
@@ -603,9 +602,7 @@ a {
 .container {
   position: relative;
   width: 100%;
-  top: -50px;
   background-color: #f6f6f6;
-  border-radius: 30px 30px 0px 0px;
 }
 .container__box {
   display: flex;
@@ -618,29 +615,36 @@ a {
   display: flex;
   font-weight: initial;
   font-size: 1.7rem;
-  padding-top: 1rem;
-  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
 }
 .container__heart {
   position: absolute;
   right: 40px;
-  top: 37px;
+  top: 5px;
   font-size: 25px;
 }
-.container__heart:hover .fa-heart-animated1 {
+.container__heart:hover .fa-heart-animated {
   font-size: 26px;
+}
+
+.border {
+  position: relative;
+  background-color: #f6f6f6;
+  top: -20px;
+  width: 100%;
+  border-radius: 30px 30px 0px 0px;
+  height: 21px;
 }
 
 @media (min-width: 1024px) {
   .container {
-    top: -35px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     width: auto;
     margin-right: 12rem;
     margin-left: 12rem;
-    padding-left: 12rem;
-    padding-right: 12rem;
   }
   .container__title {
     padding-top: 2rem;
@@ -648,10 +652,19 @@ a {
   .container__heart {
     position: relative;
     left: 35px;
-    top: 25px;
+    top: 15px;
     font-size: 25px;
   }
   .container__box {
     margin-bottom: 1.2rem;
+  }
+  .border {
+    top: -40px;
+    width: auto;
+    margin-bottom: -41px;
+    margin-right: 12rem;
+    margin-left: 12rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
   }
 }

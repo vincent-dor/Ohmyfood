@@ -5,12 +5,13 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    height: 41vh;
+    height: 36vh;
   }
 }
 @media (min-width: 1024px) {
-  .image { &__page {
-    height: 42vh;
-  }
+  .image {
+    &__page {
+      height: 45vh;
+    }
   }
 }
